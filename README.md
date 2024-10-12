@@ -76,11 +76,11 @@ Since js-beautify is a JavaScript formatter, it doesn't work properly on GameMak
 
 Handled automatically inside of `format-gml.py` by removing all whitespace between characters `@`/`$` and `"`.
 
-1. Data structure accessors
+2. Data structure accessors
 
 Handled automatically inside of `format-gml.py` by removing all whitespace between characters `[` and `@`/`|`/`#`/`?`/`$`.
 
-1. `#macro`s
+3. `#macro`s
 
 Currently the only fix for those is to surround them with `/* beautify ignore:start */` and `/* beautify ignore:end */` like so:
 
