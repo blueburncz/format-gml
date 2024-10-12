@@ -72,11 +72,15 @@ python3 format-gml.py
 
 Since js-beautify is a JavaScript formatter, it doesn't work properly on GameMaker Language in all cases.
 
-1. `$"these strings"`
+1. Strings `@""` and `$""`
 
-Handled automatically inside of `format-gml.py` by removing all whitespace between character `$` and `"`.
+Handled automatically inside of `format-gml.py` by removing all whitespace between characters `@`/`$` and `"`.
 
-2. `#macro`s
+1. Data structure accessors
+
+Handled automatically inside of `format-gml.py` by removing all whitespace between characters `[` and `@`/`|`/`#`/`?`/`$`.
+
+1. `#macro`s
 
 Currently the only fix for those is to surround them with `/* beautify ignore:start */` and `/* beautify ignore:end */` like so:
 
