@@ -70,7 +70,7 @@ python3 format-gml.py
 
 ## Common issues
 
-Since js-beautify is a JavaScript formatter, it doesn't work properly on GameMaker in all cases.
+Since js-beautify is a JavaScript formatter, it doesn't work properly on GameMaker Language in all cases.
 
 1. `$"these strings"`
 
